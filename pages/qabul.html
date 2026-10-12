@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qabul - EduPortal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/qabul.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">EduPortal</a>
+
+            <!-- Mobil uchun Hamburger tugmasi -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <a href="../index.html">Bosh sahifa</a>
+                <a href="../pages/sohalar.html">Kurslar</a>
+                <a href="../pages/mentorlar.html">O'qituvchilar</a>
+                <a href="../pages/qabul.html">Qabul</a>
+                <a href="../pages/aloqa.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="enroll-section">
+        <div class="enroll-container">
+
+            <div class="enroll-info">
+                <span class="badge">🔥 Shoshiling! Aksiya cheklangan</span>
+                <h2>O'quv kursiga 30% chegirma bilan yoziling!</h2>
+                <p class="description">Bugun ro'yxatdan o'ting va kelajak kasbini hamyonbop narxda egallang.</p>
+
+                <div class="timer-box">
+                    <p>Chegirma tugashiga qoldi:</p>
+                    <div class="timer">
+                        <div><span id="hours">05</span><small>soat</small></div>
+                        <div><span id="minutes">42</span><small>daqiqa</small></div>
+                        <div><span id="seconds">18</span><small>soniya</small></div>
+                    </div>
+                </div>
+
+                <div class="bonuses">
+                    <h4>🎁 Bepul bonuslarga ega bo'ling:</h4>
+                    <ul>
+                        <li>✨ <strong>Bepul IT Roadmap</strong> va o'quv qo'llanma</li>
+                        <li>💻 <strong>Telegram yopiq hamjamiyatiga</strong> a'zolik</li>
+                        <li>🚀 <strong>Birinchi sinov darsi</strong> mutlaqo bepul</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="enroll-form-card">
+                <div class="form-header">
+                    <h3>Joyingizni band qiling</h3>
+                    <p>Atigi 5 ta bo'sh o'rin qoldi!</p>
+                </div>
+
+                <form class="enroll-form">
+                    <div class="input-group">
+                        <label>Ismingiz</label>
+                        <input type="text" placeholder="Ismingizni kiriting" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Telefon raqamingiz</label>
+                        <input type="tel" placeholder="+998 (90) 123-45-67" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Yo'nalishni tanlang</label>
+                        <select required>
+                            <option value="" disabled selected>Yo'nalishni tanlang</option>
+                            <option value="frontend">Frontend Dasturlash</option>
+                            <option value="backend">Backend Dasturlash</option>
+                            <option value="design">Web Design (UI/UX)</option>
+                            <option value="flutter">Flutter Mobile</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Chegirmani qo'lga kiritish ✨</button>
+
+                    <p class="terms-text">
+                        Tugmani bosish orqali siz shartlarga rozilik bildirasiz.
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap Validation Form -->
+    <div class="container my-5">
+        <form class="row g-3 needs-validation p-4 bg-white rounded-3 shadow-sm" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Ismingiz</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Muzaffar" required>
+                <div class="valid-feedback">To'g'ri kiritildi!</div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Familiyangiz</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Botirov" required>
+                <div class="valid-feedback">To'g'ri kiritildi!</div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Email manzilingiz</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">Iltimos email kiriting.</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Shahringiz</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">Shahringizni kiriting.</div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Turar joyingiz</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Viloyatni tanlang</option>
+                    <option>Andijon viloyati</option>
+                    <option>Buxoro viloyati</option>
+                    <option>Fargʻona viloyati</option>
+                    <option>Jizzax viloyati</option>
+                    <option>Xorazm viloyati</option>
+                    <option>Namangan viloyati</option>
+                    <option>Navoiy viloyati</option>
+                    <option>Qashqadaryo viloyati</option>
+                    <option>Samarqand viloyati</option>
+                    <option>Sirdaryo viloyati</option>
+                    <option>Surxondaryo viloyati</option>
+                    <option>Toshkent viloyati</option>
+                </select>
+                <div class="invalid-feedback">Viloyatni tanlang.</div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Pochta indeksi (Zip)</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">Zip kodni kiriting.</div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Shartlar va qoidalarga rozilik bildirish
+                    </label>
+                    <div class="invalid-feedback">Yuborishdan oldin rozilik bildirishingiz kerak.</div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Yuborish</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3 class="footer-logo"><span>Edu</span>Portal</h3>
+                <p class="footer-desc">
+                    Zamonaviy dasturlash, bulutli texnologiyalar va kiberxavfsizlik yechimlari bilan kelajagingizni
+                    poydevorini quring.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Xizmatlar</h4>
+                <ul>
+                    <li><a href="#">Web Dasturlash</a></li>
+                    <li><a href="#">Mobile ilovalar</a></li>
+                    <li><a href="#">Kiberxavfsizlik</a></li>
+                    <li><a href="#">Cloud & DevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigatsiya</h4>
+                <ul>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Loyihalar</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karyera</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Aloqa</h4>
+                <p>Email: info@itsolutions.uz</p>
+                <p>Tel: +998 (90) 123-45-67</p>
+                <div class="social-links">
+                    <a href="https://t.me/Muzaffar20112011" target="_blank">Telegram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ITSolutions. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="../js/qabul.js"></script>
+</body>
+
+</html>

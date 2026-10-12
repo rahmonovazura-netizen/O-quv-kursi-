@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa - EduPortal</title>
+    <link rel="stylesheet" href="../styles/aloqa.css">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="header-container">
+            <a class="logo" href="../index.html">EduPortal</a>
+
+            <!-- Hamburger tugmasi -->
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigatsiya menyusi -->
+            <nav class="navbar" id="navbar">
+                <a href="../index.html">Bosh sahifa</a>
+                <a href="./sohalar.html">Kurslar</a>
+                <a href="./mentorlar.html">O'qituvchilar</a>
+                <a href="./qabul.html">Qabul</a>
+                <a href="./aloqa.html" class="active">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-container">
+        <form id="contactForm">
+            <h1>Biz bilan bog'laning</h1>
+
+            <div class="input-group">
+                <input type="text" id="firstname" placeholder="Ismingiz" required>
+                <input type="text" id="Lastname" placeholder="Familiyangiz" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email manzilingiz" required>
+                <input type="tel" id="mobile" placeholder="Telefon raqamingiz" required>
+            </div>
+
+            <h4>Xabaringizni qoldiring:</h4>
+            <textarea id="message" placeholder="Xabaringizni shu yerga yozing..." required></textarea>
+
+            <button type="submit" id="button">Yuborish</button>
+        </form>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3 class="footer-logo"><span>Edu</span>Portal</h3>
+                <p class="footer-desc">
+                    Zamonaviy dasturlash, bulutli texnologiyalar va kiberxavfsizlik yechimlari bilan biznesingizni
+                    keyingi bosqichga olib chiqamiz.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Xizmatlar</h4>
+                <ul>
+                    <li><a href="#">Web Dasturlash</a></li>
+                    <li><a href="#">Mobile ilovalar</a></li>
+                    <li><a href="#">Kiberxavfsizlik</a></li>
+                    <li><a href="#">Cloud & DevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigatsiya</h4>
+                <ul>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Loyihalar</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karyera</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Aloqa</h4>
+                <p>Email: info@itsolutions.uz</p>
+                <p>Tel: +998 (90) 123-45-67</p>
+                <div class="social-links">
+                    <a href="https://t.me/Muzaffar20112011" target="_blank">Telegram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ITSolutions. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="../js/aloqa.js"></script>
+
+</body>
+
+</html>

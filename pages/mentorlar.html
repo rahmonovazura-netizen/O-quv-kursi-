@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'qituvchilar - EduPortal</title>
+    <link rel="stylesheet" href="../styles/mentorlar.css">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">EduPortal</a>
+
+            <!-- Mobil Menyu Tugmasi -->
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- NAVIGATSIYA -->
+            <nav class="navbar" id="navbar">
+                <a href="../index.html">Bosh sahifa</a>
+                <a href="./sohalar.html">Kurslar</a>
+                <a href="./mentorlar.html" class="active">O'qituvchilar</a>
+                <a href="./qabul.html">Qabul</a>
+                <a href="./aloqa.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- STATS BANNER SECTION -->
+    <section class="stats-banner">
+        <div class="container stats-grid">
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Tajribali mentorlar</p>
+            </div>
+            <div class="stat-box">
+                <h3>5,000+</h3>
+                <p>Muvaffaqiyatli bitiruvchilar</p>
+            </div>
+            <div class="stat-box">
+                <h3>4.9 / 5.0</h3>
+                <p>O'rtacha reyting</p>
+            </div>
+            <div class="stat-box">
+                <h3>100%</h3>
+                <p>Amaliy tajriba</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENTORS SECTION -->
+    <section class="mentors-section">
+        <div class="mentors-container">
+
+            <!-- SECTION HEADER & FILTER CONTROL -->
+            <div class="section-header">
+                <div class="header-text">
+                    <h2>Mentorlar</h2>
+                    <p>Sizning sohada o'sishingiz uchun eng yaxshi mutaxassislar.</p>
+                </div>
+
+                <div class="filter-controls">
+                    <!-- Qidiruv paneli -->
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="searchInput" placeholder="Mentor izlash...">
+                    </div>
+
+                    <!-- Soha bo'yicha filter -->
+                    <select class="filter-select" id="roleFilter">
+                        <option value="all">Barcha sohalar</option>
+                        <option value="backend">Backend Dasturlash</option>
+                        <option value="design">UI/UX Dizayn</option>
+                        <option value="devops">DevOps & Cloud</option>
+                        <option value="frontend">Frontend Dasturlash</option>
+                    </select>
+
+                    <!-- Saralash -->
+                    <select class="filter-select" id="sortBy">
+                        <option value="rating">Reyting bo'yicha</option>
+                        <option value="experience">Tajriba bo'yicha</option>
+                        <option value="students">O'quvchilar soni</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- MENTORS GRID -->
+            <div class="mentors-grid" id="mentorsGrid">
+
+                <!-- Mentor Card 1 -->
+                <div class="mentor-card">
+                    <div class="card-header">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+                            alt="Azizbek Rustamov" class="avatar">
+                        <div class="user-info">
+                            <h3>Azizbek Rustamov</h3>
+                            <span class="role">Senior Backend Developer</span>
+                            <span class="exp-badge">💼 6 yil tajriba</span>
+                        </div>
+                    </div>
+                    <p class="bio">
+                        Python (Django/FastAPI) va Microservices arhitekturasi bo'yicha kuchli ekspertiza. Katta
+                        yuklamali tizimlarni qurish sirlarini o'rgatadi.
+                    </p>
+
+                    <!-- Skills Tags -->
+                    <div class="skills-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">O'quvchilar</span>
+                            <span class="stat-value">320+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Reyting</span>
+                            <span class="stat-value rating">★ 4.9</span>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-profile">Profilni ko'rish</button>
+                        <button class="btn-book">Sessiya band qilish</button>
+                    </div>
+                </div>
+
+                <!-- Mentor Card 2 -->
+                <div class="mentor-card">
+                    <div class="card-header">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200"
+                            alt="Nodira Tursunova" class="avatar">
+                        <div class="user-info">
+                            <h3>Nodira Tursunova</h3>
+                            <span class="role">Lead Product Designer</span>
+                            <span class="exp-badge">💼 8 yil tajriba</span>
+                        </div>
+                    </div>
+                    <p class="bio">
+                        Figma, Design Systems va User Research. Foydalanuvchilar qulayligini ta'minlash va chiroyli
+                        interfeyslar yaratishga ihtisoslashgan.
+                    </p>
+
+                    <!-- Skills Tags -->
+                    <div class="skills-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Design System</span>
+                        <span class="tag">User Research</span>
+                    </div>
+
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">O'quvchilar</span>
+                            <span class="stat-value">450+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Reyting</span>
+                            <span class="stat-value rating">★ 5.0</span>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-profile">Profilni ko'rish</button>
+                        <button class="btn-book">Sessiya band qilish</button>
+                    </div>
+                </div>
+
+                <!-- Mentor Card 3 -->
+                <div class="mentor-card">
+                    <div class="card-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+                            alt="Jamshid Alimov" class="avatar">
+                        <div class="user-info">
+                            <h3>Jamshid Alimov</h3>
+                            <span class="role">DevOps Engineer</span>
+                            <span class="exp-badge">💼 5 yil tajriba</span>
+                        </div>
+                    </div>
+                    <p class="bio">
+                        Docker, Kubernetes, CI/CD jarayonlarini avtomatlashtirish. Zamonaviy server infratuzilmasini
+                        boshqarishni noldan o'rgatadi.
+                    </p>
+
+                    <!-- Skills Tags -->
+                    <div class="skills-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Linux</span>
+                    </div>
+
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">O'quvchilar</span>
+                            <span class="stat-value">180+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Reyting</span>
+                            <span class="stat-value rating">★ 4.8</span>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-profile">Profilni ko'rish</button>
+                        <button class="btn-book">Sessiya band qilish</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BECOME A MENTOR CTA -->
+            <section class="cta-section">
+                <div class="cta-container">
+                    <h2>O'zingiz o'rgating va tajriba ulashing!</h2>
+                    <p>EduPortal jamoasiga mentor sifatida qo'shiling hamda minglab talabalarga yordam bering.</p>
+                    <a href="../pages/qabul.html" class="btn-cta">Arizani topshirish</a>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="faq-title">Tez-tez beriladigan savollar</h2>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h4>Mentor bilan yakka tartibda (1-on-1) gaplashsa bo'ladimi?</h4>
+                        <p>Ha, har bir mentorning profiliga kirib, individual konsultatsiya yoki mentorship uchun vaqt
+                            ajratishingiz mumkin.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>Mentorlar qanday saralab olinadi?</h4>
+                        <p>Barcha o'qituvchilar kamida 3-5 yillik amaliy tajribaga ega va texnik suhbatdan o'tgan
+                            mutaxassislardir.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>Sessiya vaqtini o'zgartirish mumkinmi?</h4>
+                        <p>Sessiyaga kamida 24 soat qolganda vaqtni bepul ko'chirish imkoniyati mavjud.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3 class="footer-logo"><span>Edu</span>Portal</h3>
+                <p class="footer-desc">
+                    Zamonaviy dasturlash, bulutli texnologiyalar va kiberxavfsizlik yechimlari bilan biznesingizni
+                    keyingi bosqichga olib chiqamiz.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Xizmatlar</h4>
+                <ul>
+                    <li><a href="#">Web Dasturlash</a></li>
+                    <li><a href="#">Mobile ilovalar</a></li>
+                    <li><a href="#">Kiberxavfsizlik</a></li>
+                    <li><a href="#">Cloud & DevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigatsiya</h4>
+                <ul>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Loyihalar</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karyera</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Aloqa</h4>
+                <p>Email: info@itsolutions.uz</p>
+                <p>Tel: +998 (90) 123-45-67</p>
+                <div class="social-links">
+                    <a href="https://t.me/Muzaffar20112011" target="_blank">Telegram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ITSolutions. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

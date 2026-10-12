@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT o'quv markazi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">EduPortal</a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigatsiya Menyu -->
+            <nav class="navbar" id="navbar">
+                <a href="./index.html" class="nav-link">Bosh sahifa</a>
+                <a href="./pages/sohalar.html" class="nav-link">Kurslar</a>
+                <a href="./pages/mentorlar.html" class="nav-link">O'qituvchilar</a>
+                <a href="./pages/qabul.html" class="nav-link">Qabul</a>
+                <a href="./pages/aloqa.html" class="nav-link">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CAROUSEL SECTION -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/1.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- GRID SECTION -->
+    <section class="grid my-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Bizning yo'nalishlarimiz</h1>
+            <div class="grid-container">
+                <div class="grid-item"><img src="./images/front.jpg" alt="Frontend"></div>
+                <div class="grid-item"><img src="./images/back.jpg" alt="Backend"></div>
+                <div class="grid-item"><img src="./images/flutter.jpg" alt="Flutter"></div>
+                <div class="grid-item"><img src="./images/web-dizayn.jpg" alt="Web Dizayn"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <div class="container my-5">
+        <form class="row g-3 needs-validation p-4 p-md-5 rounded shadow-sm bg-light" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Ismingiz</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Muzaffar" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Familiyangiz</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Botirov" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Email manzilingiz</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="email" class="form-control" id="validationCustomUsername" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Shahringiz</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Turar joyingiz</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Viloyatni tanlang</option>
+                    <option>Andijon viloyati</option>
+                    <option>Buxoro viloyati</option>
+                    <option>Fargʻona viloyati</option>
+                    <option>Jizzax viloyati</option>
+                    <option>Xorazm viloyati</option>
+                    <option>Namangan viloyati</option>
+                    <option>Navoiy viloyati</option>
+                    <option>Qashqadaryo viloyati</option>
+                    <option>Samarqand viloyati</option>
+                    <option>Sirdaryo viloyati</option>
+                    <option>Surxondaryo viloyati</option>
+                    <option>Toshkent viloyati</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Pochta indeksi (Zip)</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Shartlar va qoidalarga rozilik bildirish
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary px-4" type="submit">Yuborish</button>
+            </div>
+        </form>
+    </div>
+
+    <section class="enroll-section">
+        <div class="container">
+            <div class="enroll-container">
+                <div class="enroll-info">
+                    <span class="badge bg-danger mb-3">🔥 Shoshiling! Aksiya cheklangan</span>
+                    <h2>O'quv kursiga 30% chegirma bilan yoziling!</h2>
+                    <p class="description">Bugun ro'yxatdan o'ting va kelajak kasbini hamyonbop narxda egallang.</p>
+
+                    <div class="timer-box my-4">
+                        <p class="fw-bold text-white mb-2">Chegirma tugashiga qoldi:</p>
+                        <div class="timer">
+                            <div><span id="hours">05</span><small>soat</small></div>
+                            <div><span id="minutes">42</span><small>daqiqa</small></div>
+                            <div><span id="seconds">18</span><small>soniya</small></div>
+                        </div>
+                    </div>
+
+                    <div class="bonuses">
+                        <h4>🎁 Bepul bonuslarga ega bo'ling:</h4>
+                        <ul>
+                            <li>✨ Bepul IT Roadmap va o'quv qo'llanma</li>
+                            <li>💻 Telegram yopiq hamjamiyatiga a'zolik</li>
+                            <li>🚀 Birinchi sinov darsi mutlaqo bepul</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="enroll-form-card">
+                    <div class="form-header">
+                        <h3>Joyingizni band qiling</h3>
+                        <p>Atigi 5 ta bo'sh o'rin qoldi!</p>
+                    </div>
+
+                    <form class="enroll-form">
+                        <div class="input-group-custom">
+                            <label>Ismingiz</label>
+                            <input type="text" placeholder="Ismingizni kiriting" required>
+                        </div>
+
+                        <div class="input-group-custom">
+                            <label>Telefon raqamingiz</label>
+                            <input type="tel" placeholder="+998 (90) 123-45-67" required>
+                        </div>
+
+                        <div class="input-group-custom">
+                            <label>Yo'nalishni tanlang</label>
+                            <select required>
+                                <option value="" disabled selected>Yo'nalishni tanlang</option>
+                                <option value="frontend">Frontend Dasturlash</option>
+                                <option value="backend">Backend Dasturlash</option>
+                                <option value="design">Web Design (UI/UX)</option>
+                                <option value="flutter">Flutter Mobile</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Chegirmani qo'lga kiritish ✨</button>
+
+                        <p class="terms-text">
+                            Tugmani bosish orqali siz shartlarga rozilik bildirasiz.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Kurs qancha vaqt davom etadi va darslar qaysi formatda bo'ladi?F
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Kursimiz davomiyligi to'liq 3 oyni (36 ta amaliy va nazariy darsni) tashkil etadi. Darslar
+                        haftada 3 marta, 2 soatdan tajribali mutaxassislar tomonidan olib boriladi. Ta'lim tizimimiz
+                        sizga qulay bo'lishi uchun 2 xil formatda yo'lga qo'yilgan:
+
+                        Offlayn: Zamonaviy jihozlangan va barcha sharoitga ega o'quv markazimizda.
+
+                        Onlayn: Interaktiv platforma va zoom orqali jonli muloqot rejimida (jonli efirda savol-javob
+                        qilish imkoniyati bilan).
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Darslarni me'yorda o'tkazib yuborsam yoki qatnasha olmasam, yozuvini ko'rish imkoniyati bormi?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Ha, albatta! Har bir o'tilgan dars yuqori sifatda (HD) yozib olinadi va dars tugagach 2-3
+                        soat ichida shaxsiy kabinetingizga joylashtiriladi.
+
+                        Siz ushbu dars yozuvlarini 6 oy davomida xohlagan vaqtingizda, istalgan qurilmadan (telefon yoki
+                        noutbuk) takroran ko'rib, mavzuni mustahkamlab borishingiz mumkin.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Kursni tugatganimdan so'ng sertifikat beriladimi?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Ha, kursimizni muvaffaqiyatli tamomlagan barcha o'quvchilarga rasmiy sertifikat topshiriladi.
+                    Sertifikat olish uchun quyidagi shartlar bajarilishi kerak:
+
+                    Darslardagi davomat va uy vazifalarini 80% dan yuqori o'zlashtirish;
+
+                    Kurs oxiridagi **amaliy bitiruv loyihasi (Portfolio)**ni muvaffaqiyatli himoya qilish.
+
+                    A'lo baholarga bitirgan va eng yuqori natija ko'rsatgan o'quvchilarga Tavsiyanoma (Recommendation
+                    Letter) va hamkor kompaniyalarga amaliyotga yo'nalish beriladi.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    O'qituvchilar va mentorlar bilan bog'lanish, tushunmagan savollarni berish imkoni bormi?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Albatta! Bizda o'quvchilarni qo'llab-quvvatlash tizimi juda kuchli yo'lga qo me'yorga qo'yilgan:
+
+                    Darsdan tashqari vaqtda yopiq Telegram guruhida 24/7 rejimida savol-javob qilishingiz mumkin.
+
+                    Har bir guruhga alohida biriktirilgan tajribali mentorlar uy vazifalaringizni tekshirib,
+                    xatolaringiz ustida birma-bir ishlaydi.
+
+                    Haftada bir marta qo'shimcha "Q&A" (Savol-Javob va konsultatsiya) darslari o'tkaziladi.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h3 class="footer-logo"><span>Edu</span>Portal</h3>
+                    <p class="footer-desc">
+                        Zamonaviy dasturlash, bulutli texnologiyalar va kiberxavfsizlik yechimlari bilan biznesingizni
+                        keyingi bosqichga olib chiqamiz.
+                    </p>
+                </div>
+
+                <div class="footer-box">
+                    <h4>Xizmatlar</h4>
+                    <ul>
+                        <li><a href="./pages/sohalar.html">Web Dasturlash</a></li>
+                        <li><a href="./pages/sohalar.html">Mobile ilovalar</a></li>
+                        <li><a href="./pages/sohalar.html">Kiberxavfsizlik</a></li>
+                        <li><a href="./pages/sohalar.html">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h4>Navigatsiya</h4>
+                    <ul>
+                        <li><a href="#">Biz haqimizda</a></li>
+                        <li><a href="#">Loyihalar</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Karyera</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h4>Aloqa</h4>
+                    <p>Email: info@itsolutions.uz</p>
+                    <p>Tel: +998 (90) 123-45-67</p>
+                    <div class="social-links">
+                        <a href="https://t.me/Muzaffar20112011" target="_blank">Telegram</a>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://github.com/">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ITSolutions. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ai-chat-widget">
+        <button id="ai-toggle-btn">🤖 AI Yordamchi</button>
+
+        <div id="ai-chat-box" class="chat-hidden">
+            <div class="chat-header">
+                <span>AI Yordamchi</span>
+                <button id="close-chat-btn">✖</button>
+            </div>
+            <div id="chat-messages">
+                <div class="message bot-message">Salom! Sizga qanday yordam bera olaman?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Savolingizni yozing...">
+                <button id="send-btn">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

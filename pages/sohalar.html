@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurslar - EduPortal</title>
+    <link rel="stylesheet" href="../styles/sohalar.css">
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">EduPortal</a>
+
+            <!-- Mobil Menyu Tugmasi -->
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- NAVIGATSIYA -->
+            <nav class="navbar" id="navbar">
+                <a href="../index.html">Bosh sahifa</a>
+                <a href="./sohalar.html" class="active">Kurslar</a>
+                <a href="./mentorlar.html">O'qituvchilar</a>
+                <a href="./qabul.html">Qabul</a>
+                <a href="./aloqa.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main-container">
+
+        <!-- HERO & FILTER SECTION -->
+        <section class="courses-hero">
+            <div class="container">
+                <h2>O'quv Yo'nalishlari</h2>
+                <p>Kelajak kasblarini noldan mukammalgacha tajribali mutaxassislardan o'rganing</p>
+
+                <!-- Qidiruv va Filtr -->
+                <div class="filter-wrapper">
+                    <div class="search-box">
+                        <input type="text" placeholder="Kurs nomini qidiring (masalan: Python, Figma)..."
+                            id="courseSearch">
+                    </div>
+                    <div class="filter-categories">
+                        <button class="filter-btn active" data-category="all">Barchasi</button>
+                        <button class="filter-btn" data-category="web">Web Dasturlash</button>
+                        <button class="filter-btn" data-category="mobile">Mobil Dasturlash</button>
+                        <button class="filter-btn" data-category="design">Dizayn</button>
+                        <button class="filter-btn" data-category="cyber">Kiberxavfsizlik & AI</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats-section">
+            <div class="container stats-container">
+                <div class="stat-card">
+                    <h3>15+</h3>
+                    <p>Amaliy Kurslar</p>
+                </div>
+                <div class="stat-card">
+                    <h3>3,500+</h3>
+                    <p>Muvaffaqiyatli Bitiruvchilar</p>
+                </div>
+                <div class="stat-card">
+                    <h3>88%</h3>
+                    <p>Ish bilan ta'minlanganlar</p>
+                </div>
+                <div class="stat-card">
+                    <h3>40+</h3>
+                    <p>Tajribali Mentorlar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSES GRID SECTION -->
+        <section class="courses-container">
+            <div class="courses-grid">
+
+                <!-- Frontend Card -->
+                <div class="card" data-category="web">
+                    <div class="card-banner">
+                        <span class="badge">Ommabop</span>
+                        <img src="../images/front.jpg" alt="Frontend Development" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Frontend Development</h3>
+                        <p>HTML, CSS, JavaScript va React/Next.js orqali zamonaviy va interaktiv veb-saytlar yaratish.
+                        </p>
+                        <div class="card-info">
+                            <span>⏱ 6 oy</span>
+                            <span>⚡️ Noldan</span>
+                        </div>
+                        <a href="../page/front.html" class="card-btn">Batafsil</a>
+                    </div>
+                </div>
+
+                <!-- Backend Card -->
+                <div class="card" data-category="web">
+                    <div class="card-banner">
+                        <span class="badge badge-hot">Talab yuqori</span>
+                        <img src="../images/back.jpg" alt="Backend Development" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Backend Development</h3>
+                        <p>Python, Django, PostgreSQL va REST API lar bilan xavfsiz hamda tekor server tizimlarini
+                            qurish.</p>
+                        <div class="card-info">
+                            <span>⏱ 7 oy</span>
+                            <span>⚡️ Noldan</span>
+                        </div>
+                        <a href="../page/back.html" class="card-btn">Batafsil</a>
+                    </div>
+                </div>
+
+                <!-- Web Design Card -->
+                <div class="card" data-category="design">
+                    <div class="card-banner">
+                        <span class="badge badge-creative">Kreativ</span>
+                        <img src="../images/web-dizayn.jpg" alt="Web & UI/UX Design" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Web & UI/UX Design</h3>
+                        <p>Figma va Adobe XD yordamida zamonaviy, chiroyli va qulay dastur va sayt interfeyslarini
+                            loyihalash.</p>
+                        <div class="card-info">
+                            <span>⏱ 4 oy</span>
+                            <span>⚡️ Noldan</span>
+                        </div>
+                        <a href="../page/design.html" class="card-btn">Batafsil</a>
+                    </div>
+                </div>
+
+                <!-- Flutter Card -->
+                <div class="card" data-category="mobile">
+                    <div class="card-banner">
+                        <span class="badge">Mobil</span>
+                        <img src="../images/flutter.jpg" alt="Flutter Development" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Flutter Development</h3>
+                        <p>Dart va Flutter texnologiyasi orqali iOS va Android uchun bitta kodingiz bilan tezkor
+                            ilovalar tuzish.</p>
+                        <div class="card-info">
+                            <span>⏱ 5 oy</span>
+                            <span>⚡️ Noldan</span>
+                        </div>
+                        <a href="../page/flutt.html" class="card-btn">Batafsil</a>
+                    </div>
+                </div>
+
+                <!-- Data Science & AI Card -->
+                <div class="card" data-category="cyber">
+                    <div class="card-banner">
+                        <span class="badge badge-new">Yangi</span>
+                        <img src="../images/AI.jpg" alt="Data Science & AI" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Data Science & AI</h3>
+                        <p>Python, Machine Learning va neyron tarmoqlar orqali ma'lumotlarni tahlil qilish hamda Sun'iy
+                            Intellekt modelini yaratish.</p>
+                        <div class="card-info">
+                            <span>⏱ 8 oy</span>
+                            <span>⚡️ O'rta daraja</span>
+                        </div>
+                        <a href="../page/AI.html" class="card-btn">Batafsil</a>
+                    </div>
+                </div>
+
+                <!-- Kiberxavfsizlik Card -->
+                <div class="card" data-category="cyber">
+                    <div class="card-banner">
+                        <span class="badge badge-hot">Talab yuqori</span>
+                        <img src="../images/secyurity.jpg" alt="Kiberxavfsizlik" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Kiberxavfsizlik (Cybersecurity)</h3>
+                        <p>Tarmoq havfsizligi, pentesting va tizimlarni kiber-hujumlardan himoya qilish ko'nikmalarini
+                            egallang.</p>
+                        <div class="card-info">
+                            <span>⏱ 6 oy</span>
+                            <span>⚡️ Noldan</span>
+                        </div>
+                        <a href="../page/cyber.html" class="card-btn">Batafsil</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nima uchun EduPortal?</h2>
+                    <p>Aynan bizning platformamizda ta'lim olishingiz uchun 4 ta asosiy sabab</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💻</div>
+                        <h4>100% Amaliy mashg'ulotlar</h4>
+                        <p>Quruq nazariyadan voz kechgan holda har bir darsda haqiqiy loyihalar ustida ishlaysiz.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">👨‍🏫</div>
+                        <h4>Kuchli Mentorlar</h4>
+                        <p>Katta IT kompaniyalarda ishlayotgan yetakchi dasturchilar tajribasidan o'rganasiz.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📜</div>
+                        <h4>Sertifikat & Portfofio</h4>
+                        <p>Kurs yakunida xalqaro darajadagi sertifikat va tayyor loyihalardan iborat portfolioga ega
+                            bo'lasiz.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💼</div>
+                        <h4>Karyera Markazi Ko'magi</h4>
+                        <p>Rezyume tayyorlash, intervyuga tayyorgarlik va hamkor kompaniyalarga ishga joylashishda
+                            yordam beramiz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <div class="container cta-container">
+                <div class="cta-text">
+                    <h2>Qaysi yo'nalishni tanlashda ikkilanayapsizmi?</h2>
+                    <p>Mutaxassislarimiz bilan bog'laning va bepul konsultatsiyaga ega bo'ling!</p>
+                </div>
+                <a href="./aloqa.html" class="cta-btn">Konsultatsiya olish</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3 class="footer-logo"><span>Edu</span>Portal</h3>
+                <p class="footer-desc">
+                    Zamonaviy dasturlash, bulutli texnologiyalar va kiberxavfsizlik yechimlari bilan biznesingizni va
+                    karyerangizni keyingi bosqichga olib chiqamiz.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Xizmatlar</h4>
+                <ul>
+                    <li><a href="../page/web.html">Web Dasturlash</a></li>
+                    <li><a href="../page/flutt.html">Mobile ilovalar</a></li>
+                    <li><a href="../page/security.html">Kiberxavfsizlik</a></li>
+                    <li><a href="../page/front.html">Cloud & DevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigatsiya</h4>
+                <ul>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Loyihalar</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karyera</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Aloqa</h4>
+                <p>Email: info@itsolutions.uz</p>
+                <p>Tel: +998 (90) 123-45-67</p>
+                <div class="social-links">
+                    <a href="#">Telegram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ITSolutions. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="../js/sohalar.js"></script>
+</body>
+
+</html>
